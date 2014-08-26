@@ -1,0 +1,54 @@
+﻿<div class="navbar navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">ShelfBook</a>
+            <div class="pull-right" style="margin-top:12px; margin-right:20px;">
+                <form role="search" data-bind="submit:search">
+                    <input type="text" class="search-bar form-control" placeholder="Szukaj">
+
+                    <button type="submit" class="btn btn-default hidden"></button>
+                </form>
+            </div>
+        </div>
+
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+            <ul class="nav navbar-nav" data-bind="foreach: router.navigationModel">
+                <li data-bind="css: { active: isActive }">
+                    <a data-bind="attr: { href: hash }, text: title"></a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="loader" data-bind="css: { active: router.isNavigating }">
+                    <i class="fa fa-spinner fa-spin fa-2x"></i>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li class="dropdown pull-right">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="icon-user"></i> Admin <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-bind="click: showPasswordModal"><i class="icon-cogs"></i> Change Password</a></li>
+                        <li><a href="/logout"><i class="icon-off"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+<div class="container" style="padding-top:51px;">
+    <div class="row page-host" data-bind="router: { transition:'entrance' }">
+    </div>
+
+</div>
+
