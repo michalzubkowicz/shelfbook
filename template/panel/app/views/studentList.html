@@ -1,0 +1,48 @@
+<div class="content">
+    <div class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget">
+                        <div class="widget-head">
+                            <div class="pull-left">Studenci</div>
+                            <div class="pull-right">
+                                <a class="btn btn-sm btn-primary" href="#">Pokaż nieaktywnych</a>
+                                <a class="btn btn-sm btn-primary" href="#">Importuj</a>
+                                <a class="btn btn-sm btn-primary" href="#">Dodaj studenta</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="widget-content" style="display: block;">
+
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                <tr>
+                                    <th>Imię</th>
+                                    <th>Nazwisko</th>
+                                    <th>NR Indeksu</th>
+                                    <th>Ilość książek wypożyczonych</th>
+                                    <th style="width:200px;">Akcja</th>
+                                </tr>
+                                </thead>
+                                <tbody data-bind="foreach: students">
+                                <tr>
+                                    <td data-bind="text: name"></td>
+                                    <td data-bind="text: surname"></td>
+                                    <td data-bind="text: index"></td>
+                                    <td>10</td>
+                                    <td>
+                                        <button class="btn btn-xs btn-primary" data-bind="click: Edit"><i class="glyphicon glyphicon-edit"></i> Edycja</button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

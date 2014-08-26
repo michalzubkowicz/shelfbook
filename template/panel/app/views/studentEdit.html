@@ -1,0 +1,53 @@
+<section>
+    <div class="content">
+        <div class="matter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form  class="form-horizontal" role="form" data-bind="with: student">
+                            <div class="form-group">
+                                <div class="col-lg-4 control-label"></div>
+                                <div class="col-lg-8">
+                                    <button type="button" class="btn btn-primary" data-bind="click: Save">Zapisz</button>
+                                    <button type="button" class="btn btn-default" data-bind="click: Cancel">Anuluj</button>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">Imię</label>
+                                <div class="col-lg-8">
+                                    <input type="text" class="form-control" data-bind="value: name" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">Nazwisko</label>
+                                <div class="col-lg-8">
+                                    <input type="text" class="form-control" data-bind="value: surname" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">Email</label>
+                                <div class="col-lg-8">
+                                    <input type="text" class="form-control" data-bind="value: email" />
+                                    <button class="btn btn-sm btn-primary">Wyślij nowe hasło</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-4 control-label">NR Indeksu</label>
+                                <div class="col-lg-8">
+                                    <input type="text" class="form-control" data-bind="value: index" />
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
