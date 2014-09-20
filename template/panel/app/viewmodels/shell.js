@@ -1,4 +1,4 @@
-﻿define(['plugins/router', 'durandal/app','bootstrap','jquery'], function (router, app,bootstrap,$) {
+﻿define(['plugins/router', 'durandal/app','bootstrap','jquery','viewmodels/passwordModal'], function (router, app,bootstrap,$,PasswordModal) {
     return {
         router: router,
         search: function() {

@@ -1,4 +1,4 @@
-define(['knockout','backend',"models/Book"], function (ko, backend,Book) {
+define(['durandal/app','knockout','backend',"models/Book",'viewmodels/rentBookModal'], function (app,ko,backend,Book,RentBookModal) {
 
     return {
         borrowed: ko.observableArray(),
@@ -17,6 +17,13 @@ define(['knockout','backend',"models/Book"], function (ko, backend,Book) {
 
 
             that.borrowed(books);
+        },
+        rentBookModal: function() {
+            RentBookModal.show().then(function(response) {
+
+
+
+            });
         }
     };
 });

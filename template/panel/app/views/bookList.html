@@ -24,7 +24,7 @@
                                     <th>Autor</th>
                                     <th>Wypożyczający</th>
                                     <th>Przewidywana data zwrotu</th>
-                                    <th style="width:160px;">Akcja</th>
+                                    <th style="width:300px;">Akcja</th>
                                 </tr>
                                 </thead>
                                 <tbody data-bind="foreach: borrowed">
@@ -37,6 +37,7 @@
                                     <td>
                                         <button class="btn btn-xs btn-primary" data-bind="click: Edit"><i class="glyphicon glyphicon-edit"></i> Edycja</button>
                                         <button class="btn btn-xs btn-default" data-bind="click: zwrot"><i class="glyphicon glyphicon-check"></i> Zwrot</button>
+                                        <button class="btn btn-xs btn-default"  data-bind="click: $parent.rentBookModal"><i class="glyphicon glyphicon-check"></i> Wypożycz</button>
                                     </td>
                                 </tr>
                                 </tbody>
